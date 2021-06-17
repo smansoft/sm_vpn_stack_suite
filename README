@@ -1,0 +1,85 @@
+
+ReadMe (user documentation) file for the sm_vpn_stack_suite (Android VPN Stack Suite) tool.
+----------------------------------------
+
+In this document user can find necessary info about usage of this tool
+(sm_vpn_stack_suite - Android VPN Stack Suite) and reference of all functionality of this tool.
+
+Features of the Android VPN Stack Suite:
+--------------------
+
+    - Simple TCP/UDP socket server (with multi-thread support) (Linux platform), that implements open simple
+        communication protocol (application level):
+            - TCP:
+                - The Client connects to the TCP Server;
+                - The Client sends "socket_client: Hello" to the Server;
+                - The Server reads message from the Client; 
+                - The Server sends "socket_server: Hello" to the Client;
+                - The Client reads message from the Server;
+                - The Client sends some text message (size 1024 with '\0' symbol) to the Server;
+                - The Server reads text message from the Client and generates inverted message (src: "1234567890" 
+                    -> inverted "0987654321");
+                - The Server sends inverted message to the Client;
+                - The Client reads message from the Server;
+                - The Client send read message to the Server;
+                - The Server reads text message from the Client and generates inverted message (src: "0987654321"
+                    -> inverted "1234567890");
+                - The Server sends inverted message to the Client;
+                - The Client reads message from the Server;
+                - Last received message by the Client should be similar to the first message sent by 
+                    Client to the Server;
+            - UDP:
+                - The Client connects to the TCP Server;
+                - The Client sends "socket_client: Hello" to the Server;
+                - The Server reads message from the Client; 
+                - The Server opens new UDP connection on new socket port;
+                - The Server sends new UDP port number to the Client (using first connection);
+                - The Client reads the UDP port number and closes first connection;
+                - The Client creates new UDP connection, using received from Server port number;
+                - The Client sends "socket_client: Hello" to the Server;
+                - The Server reads message from the Client; 
+                - The Server sends "socket_server: Hello" to the Client;
+                - ... Then communication protocol (application level) is same as described in TCP section; 
+    - Simple TCP/UDP socket client (Microsoft Visual Studio C++, Windows platform), that implements previous described protocol;
+    - Simple TCP/UDP socket client (Android Studio/Android SDK, Android platform), that implements previous described protocol;
+    - VPN Stack Application, that (Android Studio/Android SDK/Android NDK/C, Android platform), that is based on
+        VpnService (Android platform) and implements intermediate IP/TCP/UDP stack (JNI/C/Sockets);
+    - VPN Stack Application provides catching, monitoring and processing TCP/UDP/ICMP/IP packages; Then these packages
+        are processed (via JNI) at the Native API level;
+    - VPN Stack Application, can catch packages from some defined application (if text edit "Filtered Package Name" is defined)
+        or from all applications (if text edit "Filtered Package Name" is empty);
+    - VPN Stack Application creates tun0 device (after launching), which is used for catching
+        TCP/UDP/ICMP/IP packages;
+    - VPN Stack Application reads packages, sent from Android application(s) from tun0 device, provides processing these packages
+        and creates new or uses saved (sessions) TCP connections (if Android Application sends TCP package)
+        or just uses sendto (if Android Application sends TCP package);
+    - VPN Stack Application receives all packages from network, provides processing these packages
+        and writes packages to tun0 device, then packages will be received by Android application(s);
+    - VPN Stack Application doesn't use Raw Sockets;
+    - VPN Stack Application writes detailed log to Logcat and to the file
+        /data/data/com.smansoft.vpn_stack/files/logs/vpn_stack.log;
+    - Follow applications from this suite:
+            - Simple TCP/UDP socket server (with multi-thread support) (Linux platform)
+            - Simple TCP/UDP socket client (Microsoft Visual Studio C++, Windows platform)
+            - Simple TCP/UDP socket client (Android Studio/Android SDK, Android platform)
+        have been created and have been used for testing network connections and for testing the VPN Stack Application;
+
+Downloading the Android VPN Stack Suite source files:
+--------------------
+
+    Source files of the sm_vpn_stack_suite (Android VPN Stack Suite) tool can be found here:
+        http://smansoft.com/sm_vpn_stack_suite/
+        https://github.com/smansoft/sm_vpn_stack_suite
+    .
+    
+Demo, Screenshots and Log files of the Android VPN Stack Suite:
+--------------------
+
+    Demo, Screenshots and Log files of the sm_vpn_stack_suite (Android VPN Stack Suite) 
+        can be found here:
+        http://smansoft.com/sm_vpn_stack_suite/0.0.0.1/examples/
+    .
+
+--------------------
+    Copyright (C) 2021 SManSoft <http://www.smansoft.com/>
+                        Sergey Manoylo <info@smansoft.com>

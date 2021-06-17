@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{14f7c0bb-eaf3-44a3-be29-5ae65c7bda6e}</ProjectGuid>
+    <RootNamespace>sstringlib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions);SM_OS_WINDOWS;SM_SYNC_LOG</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions);SM_OS_WINDOWS;SM_SYNC_LOG</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions);SM_OS_WINDOWS;SM_SYNC_LOG</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions);SM_OS_WINDOWS;SM_SYNC_LOG</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="safe_clib_private.h" />
+    <ClInclude Include="safe_fopen.h" />
+    <ClInclude Include="safe_gets.h" />
+    <ClInclude Include="safe_lib.h" />
+    <ClInclude Include="safe_lib_errno.h" />
+    <ClInclude Include="safe_mem_constraint.h" />
+    <ClInclude Include="safe_mem_lib.h" />
+    <ClInclude Include="safe_mem_primitives_lib.h" />
+    <ClInclude Include="safe_snprintf.h" />
+    <ClInclude Include="safe_str_constraint.h" />
+    <ClInclude Include="safe_str_lib.h" />
+    <ClInclude Include="safe_types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="safe_abort_handler.c" />
+    <ClCompile Include="safe_fopen.c" />
+    <ClCompile Include="safe_gets.c" />
+    <ClCompile Include="safe_ignore_handler.c" />
+    <ClCompile Include="safe_memcmp.c" />
+    <ClCompile Include="safe_memcmp16.c" />
+    <ClCompile Include="safe_memcmp32.c" />
+    <ClCompile Include="safe_memcpy.c" />
+    <ClCompile Include="safe_memcpy16.c" />
+    <ClCompile Include="safe_memcpy32.c" />
+    <ClCompile Include="safe_memmove.c" />
+    <ClCompile Include="safe_memmove16.c" />
+    <ClCompile Include="safe_memmove32.c" />
+    <ClCompile Include="safe_memset.c" />
+    <ClCompile Include="safe_memset16.c" />
+    <ClCompile Include="safe_memset32.c" />
+    <ClCompile Include="safe_memzero.c" />
+    <ClCompile Include="safe_memzero16.c" />
+    <ClCompile Include="safe_memzero32.c" />
+    <ClCompile Include="safe_mem_constraint.c" />
+    <ClCompile Include="safe_mem_primitives_lib.c" />
+    <ClCompile Include="safe_snprintf_support.c" />
+    <ClCompile Include="safe_stpcpy.c" />
+    <ClCompile Include="safe_stpncpy.c" />
+    <ClCompile Include="safe_strcasecmp.c" />
+    <ClCompile Include="safe_strcasestr.c" />
+    <ClCompile Include="safe_strcat.c" />
+    <ClCompile Include="safe_strcmp.c" />
+    <ClCompile Include="safe_strcmpfld.c" />
+    <ClCompile Include="safe_strcpy.c" />
+    <ClCompile Include="safe_strcpyfld.c" />
+    <ClCompile Include="safe_strcpyfldin.c" />
+    <ClCompile Include="safe_strcpyfldout.c" />
+    <ClCompile Include="safe_strcspn.c" />
+    <ClCompile Include="safe_strfirstchar.c" />
+    <ClCompile Include="safe_strfirstdiff.c" />
+    <ClCompile Include="safe_strfirstsame.c" />
+    <ClCompile Include="safe_strisalphanumeric.c" />
+    <ClCompile Include="safe_strisascii.c" />
+    <ClCompile Include="safe_strisdigit.c" />
+    <ClCompile Include="safe_strishex.c" />
+    <ClCompile Include="safe_strislowercase.c" />
+    <ClCompile Include="safe_strismixedcase.c" />
+    <ClCompile Include="safe_strispassword.c" />
+    <ClCompile Include="safe_strisuppercase.c" />
+    <ClCompile Include="safe_strlastchar.c" />
+    <ClCompile Include="safe_strlastdiff.c" />
+    <ClCompile Include="safe_strlastsame.c" />
+    <ClCompile Include="safe_strljustify.c" />
+    <ClCompile Include="safe_strncat.c" />
+    <ClCompile Include="safe_strncpy.c" />
+    <ClCompile Include="safe_strnlen.c" />
+    <ClCompile Include="safe_strnterminate.c" />
+    <ClCompile Include="safe_strpbrk.c" />
+    <ClCompile Include="safe_strprefix.c" />
+    <ClCompile Include="safe_strremovews.c" />
+    <ClCompile Include="safe_strspn.c" />
+    <ClCompile Include="safe_strstr.c" />
+    <ClCompile Include="safe_strtok.c" />
+    <ClCompile Include="safe_strtolowercase.c" />
+    <ClCompile Include="safe_strtouppercase.c" />
+    <ClCompile Include="safe_strzero.c" />
+    <ClCompile Include="safe_str_constraint.c" />
+    <ClCompile Include="safe_wcpcpy.c" />
+    <ClCompile Include="safe_wcscat.c" />
+    <ClCompile Include="safe_wcscpy.c" />
+    <ClCompile Include="safe_wcsncat.c" />
+    <ClCompile Include="safe_wcsncpy.c" />
+    <ClCompile Include="safe_wcsnlen.c" />
+    <ClCompile Include="safe_wmemcmp.c" />
+    <ClCompile Include="safe_wmemcpy.c" />
+    <ClCompile Include="safe_wmemmove.c" />
+    <ClCompile Include="safe_wmemset.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

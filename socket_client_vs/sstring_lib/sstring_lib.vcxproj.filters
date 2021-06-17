@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="safe_clib_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="safe_fopen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="safe_gets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="safe_lib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="safe_lib_errno.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="safe_mem_constraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="safe_mem_lib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="safe_mem_primitives_lib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="safe_snprintf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="safe_str_constraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="safe_str_lib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="safe_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="safe_abort_handler.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_fopen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_gets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_ignore_handler.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_mem_constraint.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_mem_primitives_lib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_memcmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_memcmp16.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_memcmp32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_memcpy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_memcpy16.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_memcpy32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_memmove.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_memmove16.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_memmove32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_memset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_memset16.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_memset32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_memzero.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_memzero16.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_memzero32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_snprintf_support.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_stpcpy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_stpncpy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_str_constraint.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strcasecmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strcasestr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strcat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strcmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strcmpfld.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strcpy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strcpyfld.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strcpyfldin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strcpyfldout.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strcspn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strfirstchar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strfirstdiff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strfirstsame.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strisalphanumeric.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strisascii.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strisdigit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strishex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strislowercase.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strismixedcase.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strispassword.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strisuppercase.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strlastchar.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strlastdiff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strlastsame.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strljustify.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strncat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strncpy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strnlen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strnterminate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strpbrk.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strprefix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strremovews.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strspn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strstr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strtok.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strtolowercase.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strtouppercase.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_strzero.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_wcpcpy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_wcscat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_wcscpy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_wcsncat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_wcsncpy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_wcsnlen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_wmemcmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_wmemcpy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_wmemmove.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safe_wmemset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SOCKET CLIENT</string>
+
+    <string name="srv_address">Server Address:</string>
+    <string name="srv_port">Server Port:</string>
+
+    <string name="cln_message">Client Message:</string>
+    <string name="srv_response_1">Server Response (1):</string>
+    <string name="srv_response_2">Server Response (2):</string>
+
+    <string name="send_message">Send Message</string>
+
+    <string name="protocol">Protocol:</string>
+    <string name="tcp">TCP</string>
+    <string name="udp">UDP</string>
+
+    <string name="message_hint">3 &lt;= length &lt;= 256</string>
+    <string name="address_hint">DN/IpV4/IpV6</string>
+    <string name="port_hint">0 &lt; port &lt;= 65535</string>
+</resources>
+

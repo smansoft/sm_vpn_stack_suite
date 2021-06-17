@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">VPN Stack</string>
+
+    <string name="vpn_start">Start VPN</string>
+    <string name="vpn_stop">Stop VPN</string>
+
+    <string name="catch_app">Catch VPN Stack App only</string>
+
+    <string name="status">Status:</string>
+    <string name="status_started">Started</string>
+    <string name="status_nstarted">Not Started</string>
+
+    <string name="filt_package">Filtered Package:</string>
+
+    <string name="vpn_created">VPN Stack Service has been created...</string>
+
+    <string name="starting_vpn">Starting VPN...</string>
+    <string name="started_vpn">VPN is Started...</string>
+
+    <string name="not_started_vpn">VPN is not Started...</string>
+    <string name="already_started_vpn">VPN is Started already...</string>
+    <string name="error_starting_vpn">Error starting VPN...</string>
+
+    <string name="stopping_vpn">Stopping VPN...</string>
+    <string name="stopped_vpn">VPN is Stopped...</string>
+
+    <string name="package_name_hint">Filtered Package Name</string>
+</resources>
