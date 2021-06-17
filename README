@@ -18,12 +18,12 @@ Features of the Android VPN Stack Suite:
                 - The Client reads message from the Server;
                 - The Client sends some text message (size 1024 with '\0' symbol) to the Server;
                 - The Server reads text message from the Client and generates inverted message (src: "1234567890" 
-                    -> inverted "0987654321");
+                    -> inverted: "0987654321");
                 - The Server sends inverted message to the Client;
                 - The Client reads message from the Server;
                 - The Client send read message to the Server;
                 - The Server reads text message from the Client and generates inverted message (src: "0987654321"
-                    -> inverted "1234567890");
+                    -> inverted: "1234567890");
                 - The Server sends inverted message to the Client;
                 - The Client reads message from the Server;
                 - Last received message by the Client should be similar to the first message sent by 
