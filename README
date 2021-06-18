@@ -5,6 +5,9 @@ ReadMe (user documentation) file for the sm_vpn_stack_suite (Android VPN Stack S
 In this document user can find necessary info about usage of this tool
 (sm_vpn_stack_suite - Android VPN Stack Suite) and reference of all functionality of this tool.
 
+http://blog.smansoft.com/2021/06/18/open-source-android-vpn-stack-suite-0.0.1.1/
+http://smansoft.com/sm_vpn_stack_suite/0.0.1.1/
+
 Features of the Android VPN Stack Suite:
 --------------------
 
@@ -46,7 +49,7 @@ Features of the Android VPN Stack Suite:
         VpnService (Android platform) and implements intermediate IP/TCP/UDP stack (JNI/C/Sockets);
     - VPN Stack Application provides catching, monitoring and processing TCP/UDP/ICMP/IP packages; Then these packages
         are processed (via JNI) at the Native API level;
-    - VPN Stack Application, can catch packages from some defined application (if text edit "Filtered Package Name" is defined)
+    - VPN Stack Application can catch packages from some defined application (if text edit "Filtered Package Name" is defined)
         or from all applications (if text edit "Filtered Package Name" is empty);
     - VPN Stack Application creates tun0 device (after launching), which is used for catching
         TCP/UDP/ICMP/IP packages;
@@ -59,9 +62,9 @@ Features of the Android VPN Stack Suite:
     - VPN Stack Application writes detailed log to Logcat and to the file
         /data/data/com.smansoft.vpn_stack/files/logs/vpn_stack.log;
     - Follow applications from this suite:
-            - Simple TCP/UDP socket server (with multi-thread support) (Linux platform)
-            - Simple TCP/UDP socket client (Microsoft Visual Studio C++, Windows platform)
-            - Simple TCP/UDP socket client (Android Studio/Android SDK, Android platform)
+            - Simple TCP/UDP socket server (with multi-thread support) (Linux platform);
+            - Simple TCP/UDP socket client (Microsoft Visual Studio C++, Windows platform);
+            - Simple TCP/UDP socket client (Android Studio/Android SDK, Android platform);
         have been created and have been used for testing network connections and for testing the VPN Stack Application;
 
 Downloading the Android VPN Stack Suite source files:

@@ -18,12 +18,12 @@ Features of the sm_vpn_stack_suite (Android VPN Stack Suite)(0.0.1.1):
                 - The Client reads message from the Server;
                 - The Client sends some text message (size 1024 with '\0' symbol) to the Server;
                 - The Server reads text message from the Client and generates inverted message (src: "1234567890" 
-                    -> inverted "0987654321");
+                    -> inverted: "0987654321");
                 - The Server sends inverted message to the Client;
                 - The Client reads message from the Server;
                 - The Client send read message to the Server;
                 - The Server reads text message from the Client and generates inverted message (src: "0987654321"
-                    -> inverted "1234567890");
+                    -> inverted: "1234567890");
                 - The Server sends inverted message to the Client;
                 - The Client reads message from the Server;
                 - Last received message by the Client should be similar to the first message sent by 
@@ -46,7 +46,7 @@ Features of the sm_vpn_stack_suite (Android VPN Stack Suite)(0.0.1.1):
         VpnService (Android platform) and implements intermediate IP/TCP/UDP stack (JNI/C/Sockets);
     - VPN Stack Application provides catching, monitoring and processing TCP/UDP/ICMP/IP packages; Then these packages
         are processed (via JNI) at the Native API level;
-    - VPN Stack Application, can catch packages from some defined application (if text edit "Filtered Package Name" is defined)
+    - VPN Stack Application can catch packages from some defined application (if text edit "Filtered Package Name" is defined)
         or from all applications (if text edit "Filtered Package Name" is empty);
     - VPN Stack Application creates tun0 device (after launching), which is used for catching
         TCP/UDP/ICMP/IP packages;
@@ -59,7 +59,7 @@ Features of the sm_vpn_stack_suite (Android VPN Stack Suite)(0.0.1.1):
     - VPN Stack Application writes detailed log to Logcat and to the file
         /data/data/com.smansoft.vpn_stack/files/logs/vpn_stack.log;
     - Follow applications from this suite:
-            - Simple TCP/UDP socket server (with multi-thread support) (Linux platform)
-            - Simple TCP/UDP socket client (Microsoft Visual Studio C++, Windows platform)
-            - Simple TCP/UDP socket client (Android Studio/Android SDK, Android platform)
+            - Simple TCP/UDP socket server (with multi-thread support) (Linux platform);
+            - Simple TCP/UDP socket client (Microsoft Visual Studio C++, Windows platform);
+            - Simple TCP/UDP socket client (Android Studio/Android SDK, Android platform);
         have been created and have been used for testing network connections and for testing the VPN Stack Application;
